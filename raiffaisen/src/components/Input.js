@@ -30,7 +30,7 @@ class Input extends React.Component {
       name: this.state.inputName,
       msg: this.state.inputMessage
      };
-     console.log(obj);
+     console.log("app", obj);
     
       this.props.parentMsgToState(obj);
       // jetzt ist zeit die parent callback function zu callen 
