@@ -28,7 +28,7 @@ class Input extends React.Component {
 
      const obj = {
       name: this.state.inputName,
-      msg: this.state.inputMessage
+      message: this.state.inputMessage
      };
      console.log("app", obj);
     

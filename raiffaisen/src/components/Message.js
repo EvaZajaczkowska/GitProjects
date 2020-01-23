@@ -1,9 +1,11 @@
 import React from "react";
 
 
-function Message() {
+function Message(props) {
   return (
-    <div>Message</div>
+    <div>
+        <span><b>{props.nameOfUser}</b></span><span>{props.messageOfUser}</span>
+    </div>
   );
 }
 

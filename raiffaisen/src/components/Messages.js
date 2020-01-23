@@ -1,11 +1,15 @@
 import React from "react";
+import Message from "./Message.js";
 
-function Messages() {
+function Messages(props) {
+  const displayTheMessages = props.arrayOfMessages.map(m => <Message nameOfUser={m.name} messageOfUser={m.message}/>);
   return (
     <div>
-      Messages
+       <div className = "message-container">
+         {displayTheMessages}
+       </div>
     </div>
   );
-}
+  }
 
 export default Messages;
